@@ -4,16 +4,40 @@ include "head.php";
 include "calculator.php";
 include_once "function.php";
 
-
-
 ?>
 
 <body>
 <form action="calculator.php" method="post">
-    <h2>Calculator</h2>
     <br>
-    numberOne: <input type="number" name="numberOne"><br>
-    numberTwo: <input type="number" name="numberTwo"><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h2>Calculator</h2>
+
+                numberOne: <input type="number" name="numberOne"><br>
+                numberTwo: <input type="number" name="numberTwo"><br>
+
+            </div>
+
+            <div class="col-sm">
+               <h2>Quadratic Solver</h2>
+                a: <input type="number" name="a"><br>
+                b: <input type="number" name="b"><br>
+                c: <input type="number" name="c"><br>
+            </div>
+
+            <div class="col-sm border-dark" >
+                <h2>Quadratic Solver Result</h2>
+                <button type="submit" class="btn btn-primary" name="quad">Solve</button>
+                Eredmény:
+                            <?php
+                             if(isset($_SESSION['quad_result']))
+                                 echo $_SESSION['quad_result'];
+                             ?>
+            </div>
+        </div>
+    </div>
+
     <br>
     <div class="row">
         <div  class="col border border-dark" >
