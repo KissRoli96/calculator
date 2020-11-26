@@ -18,7 +18,7 @@ function numbersMultiplication($numberOne,$numberTwo)
 
 function numbersDivide($numberOne,$numberTwo)
 {
-    if($numberTwo == 0) {
+    if ($numberTwo == 0) {
             echo "0 val nem osztunk ertelmetlen muvelet!";
 
     }
@@ -30,7 +30,7 @@ function quadraticEquationSolver($a,$b,$c)
 {
     $d = $b*$b - 4*$a*$c;
 
-    if($d < 0 ) {
+    if ($d < 0 ) {
 
        return "The equation has no real solutions!";
 
