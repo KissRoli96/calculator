@@ -3,13 +3,13 @@
 session_start();
 include "function.php";
 
-if(isset($_POST['numberOne']) && isset($_POST['numberTwo']))
+if (isset($_POST['numberOne']) && isset($_POST['numberTwo']))
 
     $numberOne = $_POST['numberOne'];
     $numberTwo = $_POST['numberTwo'];
 
 
-if(isset($_POST['a']) && isset($_POST['b']) && isset($_POST['c']))
+if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['c']))
 
     $a = $_POST['a'];
     $b = $_POST['b'];
@@ -18,7 +18,7 @@ if(isset($_POST['a']) && isset($_POST['b']) && isset($_POST['c']))
 
 
 
-switch(true)
+switch (true)
 {
     case isset($_POST['add']):
              $_SESSION['add_result'] = numbersAddition($numberOne,$numberTwo);
