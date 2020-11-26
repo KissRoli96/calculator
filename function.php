@@ -29,8 +29,7 @@ function numbersDivide($numberOne,$numberTwo)
 function quadraticEquationSolver($a,$b,$c)
 {
     $d = $b*$b - 4*$a*$c;
-    echo $d;
-    echo "<br>";
+
     if($d < 0 ) {
 
        return "The equation has no real solutions!";
@@ -42,7 +41,7 @@ function quadraticEquationSolver($a,$b,$c)
     } else {
         $x1 = ((-$b + sqrt($d)) / (2*$a)) . "<br>";
         $x2 =  ((-$b - sqrt($d)) / (2*$a));
-        return $x1 . " -  " . $x2 ;
+        return $x1 . "    " . $x2 ;
     }
 
     return false;

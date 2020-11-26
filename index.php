@@ -31,7 +31,7 @@ include_once "function.php";
                 <button type="submit" class="btn btn-primary" name="quad">Solve</button>
                 Eredmény:
                             <?php
-                             if(isset($_SESSION['quad_result']))
+                             if (isset($_SESSION['quad_result']))
                                  echo $_SESSION['quad_result'];
                              ?>
             </div>
@@ -53,7 +53,7 @@ include_once "function.php";
             <button type="submit" class="btn btn-primary" name="sub">Subtraction</button>
             Eredmény:
             <?php
-            if(isset($_SESSION['sub_result']))
+            if (isset($_SESSION['sub_result']))
                 echo $_SESSION['sub_result'];
 
             ?>
@@ -61,15 +61,17 @@ include_once "function.php";
         <div class="border border-dark w-100"></div>
         <div class="border border-dark col">
             <button type="submit" class="btn btn-primary" name="multi">Multiplication</button>
-            Eredmény:<?php
-            if(isset($_SESSION['multi_result']))
+            Eredmény:
+            <?php
+            if (isset($_SESSION['multi_result']))
             echo $_SESSION['multi_result'];
             ?>
         </div>
         <div class="border border-dark col">
             <button type="submit" class="btn btn-primary" name="divide">Divide</button>
-            Eredmény:<?php
-            if(isset($_SESSION['divide_result']))
+            Eredmény:
+            <?php
+            if (isset($_SESSION['divide_result']))
             echo $_SESSION['divide_result'];
             ?>
         </div>
