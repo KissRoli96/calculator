@@ -1,22 +1,42 @@
 <?php
 
 
-function numbersAddition($numberOne,$numberTwo)
+/**
+ * @param $numberOne
+ * @param $numberTwo
+ * @return mixed
+ */
+function numbersAddition($numberOne, $numberTwo)
 {
     return $numberOne + $numberTwo;
 }
 
-function numbersSubtraction($numberOne,$numberTwo)
+/**
+ * @param $numberOne
+ * @param $numberTwo
+ * @return mixed
+ */
+function numbersSubtraction($numberOne, $numberTwo)
 {
     return $numberOne - $numberTwo;
 }
 
-function numbersMultiplication($numberOne,$numberTwo)
+/**
+ * @param $numberOne
+ * @param $numberTwo
+ * @return float|int
+ */
+function numbersMultiplication($numberOne, $numberTwo)
 {
     return $numberOne * $numberTwo;
 }
 
-function numbersDivide($numberOne,$numberTwo)
+/**
+ * @param $numberOne
+ * @param $numberTwo
+ * @return float|int
+ */
+function numbersDivide($numberOne, $numberTwo)
 {
     if ($numberTwo == 0) {
             echo "0 val nem osztunk ertelmetlen muvelet!";
@@ -26,7 +46,13 @@ function numbersDivide($numberOne,$numberTwo)
     return $numberOne / $numberTwo;
 }
 
-function quadraticEquationSolver($a,$b,$c)
+/**
+ * @param $a
+ * @param $b
+ * @param $c
+ * @return false|float|int|string
+ */
+function quadraticEquationSolver($a, $b, $c)
 {
     $d = $b*$b - 4*$a*$c;
 
